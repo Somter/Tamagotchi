@@ -35,7 +35,7 @@ namespace Tamagotchi
         {
             bool alive = true;
             timeLeft = 60; 
-            gameTimer = new System.Timers.Timer(1000);
+            gameTimer = new System.Timers.Timer(1000); 
             gameTimer.Elapsed += TimerElapsed;
             gameTimer.Start();
 
