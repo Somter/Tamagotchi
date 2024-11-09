@@ -9,9 +9,17 @@ namespace Tamagotchi
     class Program
     {
         static void Main() 
-        { 
-            Menu menu = new Menu();
-            menu.ShowMenu();
+        {
+            try
+            {
+                Menu menu = new Menu();
+                menu.ShowMenu();
+            }
+            catch(Exception ex) 
+            { 
+                Console.WriteLine(ex.ToString()); 
+            }
+          
         }
 
     }
